@@ -1,0 +1,38 @@
+ {
+    "destinations" : [
+    
+    {
+        "id" : 1,
+        "name" : "jungsu",
+        "category" : {
+            "type" : "person",
+            "power" : 100
+    }
+        
+    },
+    {
+        "id" : 2,
+        "name" : "minsu",
+        "category" : {
+            "type" : "person",
+            "power" : 90
+        }
+    },
+    {
+        "id" : 3,
+        "name" : "jinwoo",
+        "category" : {
+            "type" : "person",
+            "power" : 80
+        }
+    },
+    {
+        "id" : 4,
+        "name" : "sengmin",
+        "category" : {
+            "type" : "person",
+            "power" : 70
+        }
+    }
+]
+}
