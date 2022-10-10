@@ -11,7 +11,7 @@ const UseEffect = () => {
   // }, [])
   React.useEffect(()=>{
     (async ()=>{
-      const result = await axios.get('/data/destinations.json')
+      const result = await axios.get('http://localhost:3001/destinations')
       setData(result.data);
     })();
     
@@ -19,9 +19,9 @@ const UseEffect = () => {
   console.log(data);
     return (
         <div>
-             {data && data.destinations.map((v, i)=>(
-        <ul>
-          <li key={v.id}>
+             {data && data.map((v, i)=>(
+        <ul key={v.id}>
+          <li>
             <p>{v.id}</p>
             <p>{v.name}</p>
           </li>
