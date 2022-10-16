@@ -34,8 +34,35 @@
     },
     {
       "id": 5,
-      "name": "bory"
+      "name": "dddd",
+      "category": {
+        "type": "servinggo",
+        "power": 8
+      }
+    },
+    {
+      "id": 6,
+      "name": "dddd",
+      "category": {
+        "type": "servinggo",
+        "power": 8
+      }
+    },
+    {
+      "id": 7,
+      "name": "ffewfe",
+      "category": {
+        "type": "servinggo",
+        "power": 8
+      }
+    },
+    {
+      "id": 8,
+      "name": "fdfdfdfdfdfd",
+      "category": {
+        "type": "servinggo",
+        "power": 8
+      }
     }
-   
   ]
 }

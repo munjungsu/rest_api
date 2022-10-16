@@ -18,8 +18,11 @@ const Post = () => {
             axios.post('http://localhost:3001/destinations', newData)
         }
          
+         console.log(newData);
     }, [newData])
-    
+    React.useEffect(()=>{
+        getData();
+    },[newData])
     console.log(data);
     
     const idRef = React.useRef();
@@ -37,12 +40,12 @@ const Post = () => {
        })
        
        console.log(newData);
-       
+       getData();
        
     }
     return (
         <div>
-            <form onSubmit={sendData}>
+            <form >
                 <div>
                     <label htmlFor="id">id</label>
                     <input type="text" ref={idRef}/>
@@ -51,7 +54,7 @@ const Post = () => {
                     <label htmlFor="name">name</label>
                     <input type="text" ref={nameRef}/>
                 </div>
-                <button type="submit">post</button>
+                <button onClick={sendData}>post</button>
             </form>
         </div>
     );
